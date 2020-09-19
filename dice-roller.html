@@ -1,0 +1,143 @@
+<!--
+    Author: George Pappas
+    Date: September 18, 2020
+    Class: Software Engineering
+    Project: Sprint 2 - Lab 2 - Dice Roller
+    Description: This is the first version of my Dice Roller application and is being submitted as part of Lab 2.
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <meta charset="utf-8" name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+		<title>Dice Roller - George Pappas</title>
+		<link rel="stylesheet" href="dice-roller.css">
+    </head>
+
+    <!-- Script for randomizing and displaying dice. -->
+    <script>
+
+        // Generates a random integer from 1 to 6.
+        function getRandomNumber() {
+            ranNum = Math.floor(Math.random() * 6) + 1;
+        }
+
+        // Changes image for dice 1.
+        function changeImage1() {
+            var img = document.getElementById("image1");
+            getRandomNumber()
+            img.src="Dice_" + ranNum + ".png";
+        }
+
+        // Changes image for dice 2.
+        function changeImage2() {
+            var img = document.getElementById("image2");
+            getRandomNumber()
+            img.src="Dice_" + ranNum + ".png";
+        }
+
+        // Changes image for dice 3.
+        function changeImage3() {
+            var img = document.getElementById("image3");
+            getRandomNumber()
+            img.src="Dice_" + ranNum + ".png";
+        }
+
+        // Changes image for dice 4.
+        function changeImage4() {
+            var img = document.getElementById("image4");
+            getRandomNumber()
+            img.src="Dice_" + ranNum + ".png";
+        }
+
+        // Changes image for dice 5.
+        function changeImage5() {
+            var img = document.getElementById("image5");
+            getRandomNumber()
+            img.src="Dice_" + ranNum + ".png";
+        }
+
+        // Changes image for dice 6.
+        function changeImage6() {
+            var img = document.getElementById("image6");
+            getRandomNumber()
+            img.src="Dice_" + ranNum + ".png";
+        }
+        
+    </script>
+
+    <body>
+        <!-- Header -->
+        <h1>Dice Roller</h1>
+        <hr>
+
+        <!-- How to use statement. -->
+        <p>
+            Click on any of the dice to randomly roll it!
+        </p>
+
+        <!-- Container for dice 1 -->
+        <div class="container">
+            <img id="image1" src='Dice_1.png' alt="Dice" class="image" width="128">
+            <div class="middle">
+                <button onclick="changeImage1();">
+                    Roll
+                </button>
+            </div>
+        </div>
+
+        <!-- Container for dice 2 -->
+        <div class="container">
+            <img id="image2" src='Dice_2.png' alt="Dice" class="image" width="128">
+            <div class="middle">
+                <button onclick="changeImage2();">
+                    Roll
+                </button>
+            </div>
+        </div>
+
+        <!-- Container for dice 3 -->
+        <div class="container center">
+            <img id="image3" src='Dice_3.png' alt="Dice" class="image" width="128">
+            <div class="middle">
+                <button onclick="changeImage3();">
+                    Roll
+                </button>
+            </div>
+        </div>
+
+        <!-- Container for dice 4 -->
+        <div class="container">
+            <img id="image4" src='Dice_4.png' alt="Dice" class="image" width="128">
+            <div class="middle">
+                <button onclick="changeImage4();">
+                    Roll
+                </button>
+            </div>
+        </div>
+
+        <!-- Container for dice 5 -->
+        <div class="container">
+            <img id="image5" src='Dice_5.png' alt="Dice" class="image" width="128">
+            <div class="middle">
+                <button onclick="changeImage5();">
+                    Roll
+                </button>
+            </div>
+        </div>
+
+        <!-- Container for dice 6 -->
+        <div class="container">
+            <img id="image6" src='Dice_6.png' alt="Dice" class="image" width="128">
+            <div class="middle">
+                <button onclick="changeImage6();">
+                    Roll
+                </button>
+            </div>
+        </div>
+
+    </body>
+</html>
