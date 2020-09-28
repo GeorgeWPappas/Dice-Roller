@@ -6,7 +6,7 @@ Project: Dice Roller
 Lewis email: georgewpappas@lewisu.edu
 
 Content Statement:
-    Link styling (a:link, a:visited, a:hover, a:active) should be credited to 'w3schools.com'. The background picture belongs to 'wallpaperhd.wiki'. All other content is original.
+    Button shading and appearing credited to 'w3schools.com'. Dice pictures belongs to 'Wikimedia Commons' (link: https://commons.wikimedia.org/wiki/Category:Dice_faces). All other content is original.
 
 Build and Execute Instructions:
     HTML holds the links to the .css and .js files. The HTML file uses the other files to format and run the web app.
